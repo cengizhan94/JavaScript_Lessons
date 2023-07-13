@@ -1,13 +1,23 @@
+
 function hello(){
-    alert('Hello, world!');
+    const heading = document.querySelector('h1');
+    if(heading.innerHTML === "Hello World!"){
+    heading.innerHTML = "Goodbye!";  
+    } else {
+        heading.innerHTML = "Hello World!";
+    }
+   
 }
 
 let counter = 0;
 function count(){
-    if(document.querySelector("h1").innerHTML === "Hello World!"){
-    document.querySelector("h1").innerHTML = "Goodbye!";  
-    } else {
-        document.querySelector("h1").innerHTML = "Hello World!";
+    counter ++ ;
+    document.querySelector('h1').innerHTML = counter;
+
+    if (counter % 10 === 0){
+        alert(`Count is now ${counter}`);
     }
-   
+    
 }
+
+document.querySelector('button').onclick = count;
