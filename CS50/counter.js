@@ -8,5 +8,6 @@ function count(){
     }
     
 }
-
-document.querySelector('button').onclick = count;
+document.addEventListener('DOMContentLoaded', function(){
+    document.querySelector('button').onclick = count;
+})
