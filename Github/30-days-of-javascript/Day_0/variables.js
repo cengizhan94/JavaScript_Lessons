@@ -18,3 +18,6 @@ console.log(typeof(age))
 console.log(typeof(isMarried))
 console.log(typeof(gravity))
 console.log(typeof(PI))
+
+let myAge = 30
+let yourAge = 20
