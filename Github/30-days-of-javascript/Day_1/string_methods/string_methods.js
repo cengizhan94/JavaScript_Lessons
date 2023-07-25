@@ -36,4 +36,54 @@ console.log(country.endsWith("tur"))
 console.log(country.endsWith("Tur")) */
 
 //includes
+/* let string = "30 Days Of JavaScript"
+console.log(string.includes("Days"))
+console.log(string.includes("days"))
+console.log(string.includes("Script"))
+console.log(string.includes("script"))
 
+let country = "Turkey"
+console.log(country.includes("TR"))
+console.log(country.includes("Tur"))
+console.log(country.includes("key"))
+console.log(country.includes("Key")) */
+
+//index_of
+
+/* let string = "30 Days Of JavaScript"
+console.log(string.indexOf("D"))
+console.log(string.indexOf("Days"))
+console.log(string.indexOf("days")) */
+
+//last_index_of
+
+/* let string = "I love JavaScript. If you do not love JavaScript what else can you love."
+
+console.log(string.lastIndexOf("love"))
+console.log(string.lastIndexOf("you"))
+console.log(string.lastIndexOf("JavaScript")) */
+
+//length
+
+/* let js = "JavaScript"
+console.log(js.length);
+
+let firstName = "Cengiz Han";
+console.log(firstName.length) */
+
+//match
+/* let string = "love"
+let patternOne = /love/
+let patternTwo = /love/gi
+string.match(string)
+let string2 = "I love JavaScript. If you do not love JavaScript what else can you love"
+console.log(string.match("love"))
+
+
+let pattern = /love/gi
+console.log(string.match(pattern))
+
+let txt = "in 2021, I run 30 Days of Python. Now, in 2023 I super exited to start this challenge"
+let regEx = /\d/g
+console.log(txt.match(regEx))
+console.log(txt.match(/\d+/g)) */
