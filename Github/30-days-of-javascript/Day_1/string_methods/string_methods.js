@@ -107,8 +107,7 @@ console.log(country.replace("Tur", "Tür")) */
 console.log(string.search("love")) */
 
 //split
-
-let string = "30 Days Of JavaScript"
+/* let string = "30 Days Of JavaScript"
 console.log(string.split())
 console.log(string.split(" "))
 
@@ -117,4 +116,31 @@ console.log(firstName.split())
 console.log(firstName.split(" "))
 let countries = "Türkiye,Osmanlı İmparatorluğu, Selçuklu İmparatorluğu, Büyük Hun İmparatorluğu, İskitler, Kök Türkler"
 console.log(countries.split(","))
-console.log(countries.split(", "))
+console.log(countries.split(", ")) */
+
+//substring
+/* let string = "JavaScript"
+console.log(string.substring(4,6))
+let country = "Turkey"
+console.log(country.substring(0,4))
+
+console.log(string.substring(0,4))
+console.log(string.substring(4,10))
+console.log(string.substring(4)) */
+
+//LowerCase and UpperCase
+/* let string = "JavaScript"
+console.log(string.toLowerCase())
+console.log(string.toUpperCase())
+
+let firstName = "Cengiz Han"
+console.log(firstName.toLowerCase())
+console.log(firstName.toUpperCase()) */
+
+//trim
+/* let string = "     30 Days Of JavaScript      "
+console.log(string)
+console.log(string.trim(" ")) */
+
+
+
