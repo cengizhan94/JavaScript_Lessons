@@ -95,8 +95,26 @@ console.log(string.repeat(10)) */
 
 //replace
 
-let string = "30 Days Of JavaScript"
+/* let string = "30 Days Of JavaScript"
 console.log(string.replace("JavaScript", "Python"))
 
 let country = "Turkey"
-console.log(country.replace("Tur", "Tür"))
+console.log(country.replace("Tur", "Tür")) */
+
+//search
+/* let string = "I love JavaScript. If you do not love JavaScript what else can you love"
+
+console.log(string.search("love")) */
+
+//split
+
+let string = "30 Days Of JavaScript"
+console.log(string.split())
+console.log(string.split(" "))
+
+let firstName = "Cengiz Han"
+console.log(firstName.split())
+console.log(firstName.split(" "))
+let countries = "Türkiye,Osmanlı İmparatorluğu, Selçuklu İmparatorluğu, Büyük Hun İmparatorluğu, İskitler, Kök Türkler"
+console.log(countries.split(","))
+console.log(countries.split(", "))
