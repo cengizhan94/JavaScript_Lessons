@@ -87,3 +87,16 @@ let txt = "in 2021, I run 30 Days of Python. Now, in 2023 I super exited to star
 let regEx = /\d/g
 console.log(txt.match(regEx))
 console.log(txt.match(/\d+/g)) */
+
+//repeat
+
+/* let string = "love"
+console.log(string.repeat(10)) */
+
+//replace
+
+let string = "30 Days Of JavaScript"
+console.log(string.replace("JavaScript", "Python"))
+
+let country = "Turkey"
+console.log(country.replace("Tur", "Tür"))
