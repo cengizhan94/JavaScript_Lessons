@@ -20,4 +20,50 @@ let isLightOn = true
 let isLightOff = !isLightOn //false
 let isMarried = !false //true
 
+// Increment Operator
+//Pre-increment
+let count = 0
+console.log(++count)
+console.log(count)
+// Post-ncrement
+let count2 = 0
+console.log(count2++)
+console.log(count2)
+
+// Decrement Operator
+// Pre-decrement
+
+let count3 = 0
+console.log(--count)
+console.log(count)
+
+// post-decrement
+let count4 = 0
+console.log(count--)
+console.log(count)
+
+//Ternary Operators
+
+
+let isRaining = true
+isRaining
+    ? console.log("You need a rain coat")
+    : console.log("No need for a rain coat")
+
+
+isRaining = false
+isRaining
+    ? console.log("You need a rain coat")
+    : console.log("No need for a rain coat")
+
+let number = 5
+number > 0
+    ? console.log(`${number} is a positive number`)
+    : console.log(`${number} is a negative number`)
+
+number = -5
+
+number > 0
+    ? console.log(`${number} is a positive number`)
+    : console.log(`${number} is a negative number`)
 
