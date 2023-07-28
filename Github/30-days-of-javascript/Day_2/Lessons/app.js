@@ -103,4 +103,28 @@ console.log(now.getDate()) */
 /* const now = new Date()
 console.log(now.getDay()) */
 
+//Gettin time
+//1- Using getTime()
+
+/* const now = new Date()
+console.log(now.getTime()) */ //1690547420241, this is the number of seconds passed from January 1, 1970 to July 28, 2023 15:23:41
+
+//2- Using Date.now
+/* const allSeconds = Date.now()
+console.log(allSeconds)
+
+const timeInSeconds = new Date().getTime()
+console.log(allSeconds == timeInSeconds) */
+
+const now = new Date();
+const year = now.getFullYear();
+const month = now.getMonth()+1;
+const date = now.getDate();
+const hours = now.getHours();
+const minutes = now.getMinutes();
+
+console.log(`${date}/${month}/${year} ${hours}:${minutes}`)
+
+
+
 
