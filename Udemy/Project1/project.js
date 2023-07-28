@@ -20,6 +20,7 @@ function addFilm(e){
             //Error
     }else{
         const newFilm = new Film(title, director, url);
+        ui.addFilmToUI(newFilm);
     }
 
     e.preventDefault();
