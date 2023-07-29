@@ -24,7 +24,7 @@ December, January or February, the season is Winter.
 March, April or May, the season is Spring
 June, July or August, the season is Summer */
 
-const month = prompt("Which month are we in?").toUpperCase()
+/* const month = prompt("Which month are we in?").toUpperCase()
 switch(true){
     case month == "SEPTEMBER"||month == "OCTOBER"||month == "NOVEMBER":
         console.log("The season is Autumn")
@@ -40,4 +40,17 @@ switch(true){
         break
     default:
         console.log("Enter a valid month")
+} */
+
+//3- Check if a day is weekend day or a working day. Your script will take day as an input
+const workingDay = ["MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRİDAY"]
+const weekend = ["SATURDAY","SUNDAY"]
+
+const toDay = prompt("What day is it today").toUpperCase()
+if (workingDay.includes(toDay)){
+    console.log("Today is working day.")
+}else if (weekend.includes(toDay)){
+    console.log("Today is a weekend")
+}else{
+    console.log("Enter valid day name.")
 }
