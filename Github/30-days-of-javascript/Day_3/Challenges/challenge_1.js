@@ -17,7 +17,7 @@ if(age > 80){
 
 //2- Compare the values of myAge and yourAge using if... else. Based on the comparison and log the result to console stating who is older(me or you). Use prompt("Enter your age:") to get the age as input.
 
-const myAge = 29
+/* const myAge = 29
 const yourAge = parseInt(prompt("Enter your age:"))
 const ageDiff = yourAge - myAge
 if(myAge > yourAge){
@@ -28,4 +28,26 @@ if(myAge > yourAge){
     console.log(`My age is ${myAge}, your age is ${yourAge}. We are same age as you`)
 }else{
     console.log(`${yourAge} You entered wrong type.`)
+} */
+
+//3- If a is greater than b return 'a is greater than b' else 'a is less than b'. Try yo implement it in to ways using if else, ternary operator.
+
+//3- if else
+/* const a = 14;
+const b = 14; */
+/* if (a > b){
+    console.log(`${a} is greater than ${b}`)
+}else if (a < b){
+    console.log(`${b} is greater than ${a}`)
+}else{
+    console.log(`${a} equals to ${b}`)
 }
+ */
+//Ternary-Operator
+/* const result = 
+    a > b
+    ? `${a} greater than ${b}`:
+    a < b
+    ?`${b} greater than ${a}`:
+    `${a} equals to ${b}`;
+console.log(result) */
