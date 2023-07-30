@@ -112,3 +112,72 @@ console.log(numbers.toString()) */
 //join: It is used to join the lements of the array, the argument we passed in the join method wil l be joined in the array and return as a string. By default, it joins with a comma, but we can pass different string parameter which can be joined betrween the items.
 /* const numbers = [1,2,3,4,5]
 console.log(numbers.join("*")) */
+
+//Slice array elements
+//Slice: To cut out a multiple items in range. It takes two parameters: starting and ending position.It doesn't include the ending position
+
+/* const numbers = [1,2,3,4,5]
+console.log(numbers.slice(0, numbers.length))
+console.log(numbers.slice(1,4)) */
+
+//Splice method in array
+//Splice: It takes three parameters: starting position, number of times to be removed and number of items to be added.
+
+const numbers =[0,1,2,3,4,5,6,7,8,9]
+
+numbers.splice()
+
+numbers.splice(3,3,7,8,9)//start in index 3, remove 3 items and add that items (7,8,9)
+console.log(numbers)
+
+//Adding item to an array using push
+//push: adding item in the end. To add item to the end of an existing array we use the push method.
+
+const arr = ["item1","item2","item3"]
+arr.push('new item')
+console.log(arr)
+
+//pop
+arr.pop()//remove one item from the end.
+console.log(arr)
+
+
+//shift
+arr.shift()//remove one item from the beginning
+console.log(arr)
+
+//unshift
+arr.unshift(0)//adding one item from the beginning.
+console.log(arr)
+
+//reverse
+numbers.reverse()//reverse array order.
+console.log(numbers)
+
+//sort
+const webTechs = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Redus",
+    "Node",
+    "MongoDB"
+]
+
+webTechs.sort()
+console.log(webTechs)
+//after sorting we can reverse it
+webTechs.reverse()
+console.log(webTechs)
+
+//Array of arrays
+//Array can store different data types including an array itself. Let us create an array of arrays:
+
+const firstNums = [1,2,3]
+const secondNums = [1,4,9]
+
+const arrayOfArray = [[1,2,3],[1,4,9]]
+console.log(arrayOfArray[1])
+
+console.log(arrayOfArray.length)
