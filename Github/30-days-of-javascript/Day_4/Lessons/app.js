@@ -65,6 +65,50 @@ console.log(eightEmptyValues) */
 
 //Creating static values with fill
 
+/* const eightXvalues = Array(8).fill('X')
+console.log(eightXvalues)
 
+const eight0Values = Array(8).fill('0')
+console.log(eight0Values) */
 
+//Concatenating array using concat
 
+/* const firstList = [1,2,3]
+const secondList = [4,5,6]
+const thirdList = firstList.concat(secondList)
+console.log(thirdList) */
+
+//Check items in a list
+/* const fruits = ['banana','orange','mango','watermelon']
+let index = fruits.indexOf('lemon')
+if (index === -1){
+    console.log("This fruit does not exist in the array")
+}else{
+    console.log("This fruit does exist in the array")
+} */
+
+//Getting last index of an element in array
+
+/* const numbers = [1,2,3,4,5,6,7,8,9]
+console.log(numbers.lastIndexOf(2))
+console.log(numbers.lastIndexOf(0))
+console.log(numbers.lastIndexOf(4)) */
+
+//includes() To check if an item exist in an array. If it exist it returns the true. else it return false.
+
+/* const numbers = [1,2,3,4,5]
+console.log(numbers.includes(5))
+console.log(numbers.includes(0)) */
+
+/* const numbers = [1,2,3,4,5]
+console.log(Array.isArray(numbers))
+console.log(Array.isArray) */
+
+//Converting array to string
+/* const numbers = [1,2,3,4,5]
+console.log(numbers.toString()) */
+
+//Joining array elements
+//join: It is used to join the lements of the array, the argument we passed in the join method wil l be joined in the array and return as a string. By default, it joins with a comma, but we can pass different string parameter which can be joined betrween the items.
+/* const numbers = [1,2,3,4,5]
+console.log(numbers.join("*")) */
