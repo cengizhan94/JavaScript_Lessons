@@ -1,26 +1,6 @@
-const countries = [
-    'Turkey',
-    'Bolivia',
-    'Canada',
-    'Denmark',
-    'Ethiopia',
-    'Finland',
-    'Germany',
-    'Hungary',
-    'Ireland',
-    'Japan'
 
-  ]
   
-  const webTechs = [
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'React',
-    'Redux',
-    'Node',
-    'MongoDB'
-  ]
+ 
 
 //1- Declare an empty array:
 /* const arr = Array()
