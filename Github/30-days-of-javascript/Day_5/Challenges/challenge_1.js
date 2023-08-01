@@ -114,3 +114,110 @@ for(const num of numbers){
 
 //6- Using loop print the following pattern
 
+console.log("i i^2 i^3")
+for(let i = 0; i <= 10; i++ ){
+    const iSquare = i ** 2;
+    const iCube = i **3;
+    console.log(`${i}   ${iSquare}   ${iCube}`)
+}
+
+
+//7- Use for loop to iterate from 0 to 100 and print only even numbers
+console.log("Even numbers")
+for(i = 0; i <= 100; i += 2){
+    console.log(i)
+}
+
+
+//8- Use for loop to iterate from 0 to 100 and print only odd numbers
+console.log("Odd numbers")
+for (i = 0; i<= 100; i ++){
+    if(i %2 == 1){
+        console.log(i)
+    }else{
+        continue
+    }
+}
+//9- Use for loop to iterate from 0 to 100 and print the only prime numbers.
+console.log("Prime numbers from 0 to 100")
+
+for(let i = 2; i <= 100; i++){
+    let isPrime = true;
+    for(let j = 2; j < i; j++){
+        if(i % j === 0){
+            isPrime = false;
+            break;
+        }
+    }
+    if(isPrime){
+        console.log(i)
+    }
+}
+
+//10- Use for loop to iterate from 0 to 100 and print the sum of all numbers
+console.log("Sum of all numbers")
+let sum = 0;
+
+for(let i = 0; i<= 100; i++){
+    sum += i;
+}
+console.log("Sum: ",sum)
+//11-Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
+
+//Sum even:
+console.log("Sum of all even numbers:")
+let sumEven = 0;
+for(let i = 0; i <= 100; i+=2){
+    sumEven += i
+}
+console.log("Sum even numbers :", sumEven)
+
+
+//Sum odd:
+console.log("Sum of all odd numbers: ")
+let sumOdd = 0;
+for(let i = 0; i <= 100; i++){
+    if(i %2 === 1){
+       
+        sumOdd += i
+    }else{
+        continue
+    }
+}
+console.log("Sum odd numbers: ",sumOdd)
+
+//12 - Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds. Print sum of evens and sum of odd as array.
+
+const sumOddAndEvenNumbers = [sumOdd,sumEven]
+console.log(sumOddAndEvenNumbers)
+
+//13- Develop a small script which generate array of 5 random numbers
+let randomNumberArr = []
+
+for(i = 0; i <= 5; i++){
+    const randomNumber = Math.floor(Math.random()*100)+1;
+    randomNumberArr.push(randomNumber);
+}
+console.log("Random numbers array: ", randomNumberArr)
+
+//14- Develop a small script which generate array of 5 random numbers and the numbers must be unique
+let randomUniqueNumbers = []
+for(let i = 0; i < 5; i++){
+    const randomNumber = Math.floor(Math.random()*100)+1;
+    if(!randomUniqueNumbers.includes(randomNumber)){
+        randomUniqueNumbers.push(randomNumber);
+    }
+}
+console.log("Random unique numbers: ",randomUniqueNumbers)
+
+//15- Develop a small script which generate a six characters random id
+
+const charset = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+
+let randomID = "";
+
+for(let i = 0; i < 6; i++){
+    const randomIndex = Math.floor(Math.random()* charset.length);
+    randomID += charset[randomIndex];
+}
+console.log("Random ID: ", randomID)
