@@ -1,6 +1,9 @@
 //Challenge level 2
 //1- Develop a small script with generate any number of characters random id
 
+import countries from './countries.js'
+import webTechs from './web_techs.js'
+
 const charset = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
 /* let randomID = "";
 
@@ -27,7 +30,7 @@ const randomRGBCollor = `rgb(${red}, ${green},${blue})`;
 console.log("Random RGB color: ",randomRGBCollor) */
 
 //4- Using the below countries array, create the following new array.
-let countries = ["ALBANIA", "BOLIVIA", "CANADA", "DENMARK", "ETHIOPIA", "FINLAND", "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"] 
+/* let countries = ["ALBANIA", "BOLIVIA", "CANADA", "DENMARK", "ETHIOPIA", "FINLAND", "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"]  */
 /* let randomCountries = []
 
 for(let i = 0; i < countries.length; i++){
@@ -95,3 +98,55 @@ if(hasCountryWithia){
 
 // 9- Using the above countries array, find the country containing the biggest number of characters.
 
+let longestCountry = countries[0];
+for(let i = 1; i < countries.length; i++){
+    if(countries[i].length > longestCountry.length){
+        longestCountry = countries[i];
+    }
+}
+
+console.log("Longest country: ", longestCountry)
+
+//10- Using the aboe countries array. find te country containing only 5 caracters.
+let fiveCharCountry = countries[0];
+let fiveCharCountries = []
+for(let i = 1; i < countries.length; i++){
+    if(countries[i].length <= 5){
+        fiveCharCountry = countries[i];
+        fiveCharCountries.push(countries[i])
+    }
+}
+
+console.log("Only five characters country is : ", fiveCharCountry)
+console.log(fiveCharCountries)
+
+//11- Find the longest word in the webTechs array
+let longestWebTech = webTechs[0];
+for(let i = 1; i < webTechs.length; i++){
+    if(webTechs[i].length > longestWebTech.length){
+        longestWebTech = webTechs[i];
+    }
+}
+
+console.log(longestWebTech)
+
+//12 Use the webTechs array to create the following array of arrays:
+//[["HTML", 4], ["CSS", 3],["JavaScript", 10],["React", 5],["Redux", 5],["Node", 4],["MongoDB", 7]]
+
+let output = [];
+
+for(let i = 0; i < webTechs.length; i++){
+    output.push([webTechs[i], webTechs[i].length]);
+}
+console.log(output)
+
+//13-An application created using mongoD, Express, React and Node is called a MERN stack app. Create the acronym Mern by using the array mernStack
+
+let mernStack = ["MongoDB", "Express","React","Node"];
+mernAcronym = "";
+
+for(let i = 0; i < mernStack.length; i++){
+    mernAcronym += mernStack[i][0];
+}
+
+console.log("MERN acronym: ",mernAcronym);
