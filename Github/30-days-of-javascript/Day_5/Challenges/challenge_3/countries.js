@@ -1,14 +1,14 @@
 const countries = [
-    'Turkey',
-    'Bolivia',
-    'Canada',
-    'Denmark',
-    'Ethiopia',
-    'Finland',
-    'Germany',
-    'Hungary',
-    'Ireland',
-    'Japan'
+    'turkey',
+    'bolivia',
+    'canada',
+    'denmark',
+    'ethiopia',
+    'finland',
+    'germany',
+    'hungary',
+    'ireland',
+    'japan'
 
   ]
 export default countries;
