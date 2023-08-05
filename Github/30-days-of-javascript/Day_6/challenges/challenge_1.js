@@ -1,29 +1,27 @@
 //Functions Challenge Level 1
 //1-Declate a function fullName and  it print out your full name.
 
-function fullName(){
-   console.log("Cengiz Han Uyar")
+function fullName() {
+  console.log("Cengiz Han Uyar");
 }
-fullName()
-
-
+fullName();
 
 //2- Declare a function fullName and now it takes firtName lastName as a paramater and it returns your full-name.
 
-function fullName2(firstName = "Cengiz Han",lastName = "Uyar"){
-    let fullName = firstName + " " + lastName
-    return fullName
- }
- 
- console.log(fullName2());
+function fullName2(firstName = "Cengiz Han", lastName = "Uyar") {
+  let fullName = firstName + " " + lastName;
+  return fullName;
+}
+
+console.log(fullName2());
 
 //3- Declate a function add Numbers and it takes two parameters and it returns sum
 
-function addNumbers(number1, number2){
-    let sum = number1 + number2
-    return sum
+function addNumbers(number1, number2) {
+  let sum = number1 + number2;
+  return sum;
 }
-console.log(addNumbers(5,10))
+console.log(addNumbers(5, 10));
 
 //4- An area of a rectangle is calculated as follows: are = length x width. write a function which calculates areaOfRectangle.
 
@@ -35,21 +33,21 @@ console.log("Area of Rectangle: ",areaOfRectangle(20,30)) */
 
 //5- A perimeter of a recangle is calculated as follows: perimeter = 2x(length + width). Write a function which calculates perimeterOfRectangle
 
-function perimeterOfRectangle(length, width){
-    let perimeter = 2*(length + width)
-    return perimeter
+function perimeterOfRectangle(length, width) {
+  let perimeter = 2 * (length + width);
+  return perimeter;
 }
 
-console.log(perimeterOfRectangle(10,20))
+console.log(perimeterOfRectangle(10, 20));
 
 //6-A volume of a rectangular prism is calculated as follows: volume = length * width * height. Write a function which calculates volumeOfRectPrism
 
-function volumeOfRectPrism(length, width,height){
-    let volume = length * width * height
-    return volume
+function volumeOfRectPrism(length, width, height) {
+  let volume = length * width * height;
+  return volume;
 }
 
-console.log(volumeOfRectPrism(10,20,30))
+console.log(volumeOfRectPrism(10, 20, 30));
 
 //7- Area of a circle is calculated as follows: area = PI * r * r. Write a function which calculates areaOfCircle
 
@@ -64,14 +62,14 @@ console.log("Area of Circle is: ",result) */
 
 //8-CircumFerence of a circle is calculated as follows: circumference = 2PIr. Write a function which calculates circumOfCircle
 
-function circumOfCircle(radius){
-    let circumference = 2 * Math.PI * radius;
-    return circumference;
+function circumOfCircle(radius) {
+  let circumference = 2 * Math.PI * radius;
+  return circumference;
 }
 
 let radiuss = 5;
 let resultt = circumOfCircle(radiuss);
-console.log("circumference: ", resultt)
+console.log("circumference: ", resultt);
 
 //9- Density of a substance is calculated as follows: density= mass/volume. Write a function which calculates denisty.
 
@@ -117,9 +115,9 @@ console.log("Weight: ",result) */
 
 //12-Temperature in oC can be converted to oF using this formula: oF=(oC * 9/5)+32. Write a function which convert oC to oF convertCelsiusToFahrenheit
 
-function convertCelsiusToFahrenheit(celsius){
-    let fahrenheit = (celsius * 9/5)+32;
-    return fahrenheit
+function convertCelsiusToFahrenheit(celsius) {
+  let fahrenheit = (celsius * 9) / 5 + 32;
+  return fahrenheit;
 }
 
 console.log(convertCelsiusToFahrenheit(39));
@@ -133,31 +131,83 @@ Overweight: BMI is 25 to 29.9
 Obese: BMI is 30 or more
  */
 
-function calculateBMI(weight,height){
-    let heightInMeter = height / 100;
-    let BMI = weight / (heightInMeter * heightInMeter)
-    return BMI
+/* function calculateBMI(weight, height) {
+  let heightInMeter = height / 100;
+  let BMI = weight / (heightInMeter * heightInMeter);
+  return BMI;
 }
-function getWeightStatus(BMI){
-    if(BMI <= 18.5){
-        console.log("UnderWeight",BMI)   
-    }else if(BMI >= 18.5 && BMI <= 24.9){
-        return "NormalWeight"
-    }else if(BMI >= 25 && BMI <= 29.9){
-        return "OverWeight"
-    }else if(BMI >= 30){
-        return "OBESE"
+function getWeightStatus(BMI) {
+  if (BMI <= 18.5) {
+    console.log("UnderWeight", BMI);
+  } else if (BMI >= 18.5 && BMI <= 24.9) {
+    return "NormalWeight";
+  } else if (BMI >= 25 && BMI <= 29.9) {
+    return "OverWeight";
+  } else if (BMI >= 30) {
+    return "OBESE";
+  } else {
+    console.log("Please Enter valid height and weight");
+  }
+}
+
+let weight = parseFloat(prompt("Enter your weight"));
+let height = parseFloat(prompt("Enter your height"));
+let BMI = calculateBMI(weight, height);
+let weightStatus = getWeightStatus(BMI);
+
+console.log("BMI: ", BMI.toFixed(1));
+console.log("Weight Status: ", weightStatus); */
+
+//14- Write a function called checkSeason, it takes a month parameter and returns the season: Autumn, Winter, Spring or Summer.
+/*
+function checkSeason(month) {
+  const months = [
+    "JANUARY",
+    "FEBRUARY",
+    "MARCH",
+    "APRİL",
+    "MAY",
+    "JUNE",
+    "JULY",
+    "AUGUST",
+    "SEPTEMBER",
+    "OCTOBER",
+    "NOVEMBER",
+    "DECEMBER",
+  ];
+   const upperMonth = month.toUpperCase();
+
+  const monthIndex = months.indexOf(upperMonth);
+  if (monthIndex !== -1) {
+    if (monthIndex >= 2 && monthIndex <= 4) {
+      return "SPRİNG";
+    } else if (monthIndex >= 5 && monthIndex <= 7) {
+      return "SUMMER";
+    } else if (monthIndex >= 8 && monthIndex <= 10) {
+      return "AUTMN";
+    } else {
+      return "WİNTER";
+    }
+  } else {
+    return "Invalid month";
+  }
+}
+const month = prompt("Which Month are we in?")
+const season = checkSeason(month);
+console.log(`The season is ${season}`)
+ */
+//15- Math.max returns is largest argument. Write a function findMax that takes three argupments and returns their maximum with out using Math.max method
+
+function findMax(num1,num2,num3){
+    if(num1 > num2 && num1 > num3){
+        return `${num1} is max`
+    }else if(num2 > num1 && num2 > num3){
+        return `${num2} is max`
+    }else if(num3 > num1 && num3 > num2){
+        return `${num3} is max`
     }else{
-        console.log("Please Enter valid height and weight")
+        return "Invalid enter"
     }
 }
 
-let weight = parseFloat(prompt("Enter your weight"))
-let height = parseFloat(prompt("Enter your height"))
-let BMI = calculateBMI(weight, height);
-let weightStatus = getWeightStatus(BMI)
-
-console.log("BMI: ",BMI.toFixed(1))
-console.log("Weight Status: ", weightStatus);
-
-//14- Write a function called checkSeason, it takes a month parameter and returns the season: Autumn, Winter, Spring or Summer.
+console.log(findMax(0, -20, -30))
